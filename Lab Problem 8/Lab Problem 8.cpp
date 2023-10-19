@@ -20,5 +20,6 @@ int main() {
 //@param: string value to be checked
 //@return: int value of the number of characters in a string
 int countCharacter(string str) {
-
+	int count = str.length();
+	return count;
 }
