@@ -8,11 +8,21 @@ using namespace std;
 int countVowel(string str);
 
 int main() {
+	/*
 	cout << "Enter a word to be checked: ";
 	string str;
 	cin >> str;
-
 	cout << "The word has " << countVowel(str) << " vowels." << endl;
+	*/
+
+	string str;
+	while (true) {
+		cout << "Enter a string or Q to quit: ";
+		getline(cin, str);
+		if (str == "Q") break;
+		cout << "Vowel count: " << countVowel(str) << endl;
+
+	}
 
 }
 
